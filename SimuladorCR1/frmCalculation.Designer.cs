@@ -123,6 +123,8 @@ namespace SimuladorCR1
             this.seTipoCambio.Name = "seTipoCambio";
             this.seTipoCambio.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.seTipoCambio.Properties.DisplayFormat.FormatString = "C2";
+            this.seTipoCambio.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.seTipoCambio.Size = new System.Drawing.Size(123, 20);
             this.seTipoCambio.TabIndex = 1;
             // 
@@ -137,7 +139,7 @@ namespace SimuladorCR1
             this.groupBox1.Location = new System.Drawing.Point(12, 56);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(261, 148);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Precios";
             // 
@@ -152,8 +154,10 @@ namespace SimuladorCR1
             this.seMargenDistribuidor.Name = "seMargenDistribuidor";
             this.seMargenDistribuidor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.seMargenDistribuidor.Properties.DisplayFormat.FormatString = "N4";
+            this.seMargenDistribuidor.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.seMargenDistribuidor.Size = new System.Drawing.Size(100, 20);
-            this.seMargenDistribuidor.TabIndex = 7;
+            this.seMargenDistribuidor.TabIndex = 32;
             // 
             // seMargenCadena
             // 
@@ -166,13 +170,15 @@ namespace SimuladorCR1
             this.seMargenCadena.Name = "seMargenCadena";
             this.seMargenCadena.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.seMargenCadena.Properties.DisplayFormat.FormatString = "N4";
+            this.seMargenCadena.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.seMargenCadena.Size = new System.Drawing.Size(100, 20);
-            this.seMargenCadena.TabIndex = 6;
+            this.seMargenCadena.TabIndex = 31;
             this.seMargenCadena.EditValueChanged += new System.EventHandler(this.seMargenCadena_EditValueChanged);
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(17, 105);
+            this.labelControl4.Location = new System.Drawing.Point(13, 105);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(73, 13);
             this.labelControl4.TabIndex = 5;
@@ -197,13 +203,15 @@ namespace SimuladorCR1
             this.seImpuestoConsumo.Name = "seImpuestoConsumo";
             this.seImpuestoConsumo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.seImpuestoConsumo.Properties.DisplayFormat.FormatString = "N4";
+            this.seImpuestoConsumo.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.seImpuestoConsumo.Size = new System.Drawing.Size(100, 20);
-            this.seImpuestoConsumo.TabIndex = 3;
+            this.seImpuestoConsumo.TabIndex = 30;
             this.seImpuestoConsumo.EditValueChanged += new System.EventHandler(this.seImpuestoConsumo_EditValueChanged);
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(17, 31);
+            this.labelControl2.Location = new System.Drawing.Point(13, 31);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(58, 13);
             this.labelControl2.TabIndex = 1;
@@ -218,7 +226,7 @@ namespace SimuladorCR1
             this.groupBox2.Location = new System.Drawing.Point(288, 56);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(234, 148);
-            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Precio Consumidor";
             // 
@@ -229,17 +237,20 @@ namespace SimuladorCR1
             0,
             0,
             0});
+            this.seCaja.Enabled = false;
             this.seCaja.Location = new System.Drawing.Point(96, 65);
             this.seCaja.Name = "seCaja";
+            this.seCaja.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.seCaja.Properties.Appearance.Options.UseBackColor = true;
             this.seCaja.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.seCaja.Size = new System.Drawing.Size(100, 20);
-            this.seCaja.TabIndex = 6;
+            this.seCaja.TabIndex = 41;
             this.seCaja.EditValueChanged += new System.EventHandler(this.seCaja_EditValueChanged);
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(13, 68);
+            this.labelControl6.Location = new System.Drawing.Point(17, 68);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(26, 13);
             this.labelControl6.TabIndex = 4;
@@ -257,7 +268,7 @@ namespace SimuladorCR1
             this.sePieza.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sePieza.Size = new System.Drawing.Size(100, 20);
-            this.sePieza.TabIndex = 3;
+            this.sePieza.TabIndex = 2;
             this.sePieza.EditValueChanged += new System.EventHandler(this.sePieza_EditValueChanged);
             // 
             // labelControl7
@@ -289,7 +300,7 @@ namespace SimuladorCR1
             this.groupBox3.Location = new System.Drawing.Point(12, 281);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(510, 177);
-            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = " Costos de Internacion(Q/CJ)";
             // 
@@ -300,16 +311,16 @@ namespace SimuladorCR1
             0,
             0,
             0});
-            this.seCostInternacion.Location = new System.Drawing.Point(375, 141);
+            this.seCostInternacion.Location = new System.Drawing.Point(375, 135);
             this.seCostInternacion.Name = "seCostInternacion";
             this.seCostInternacion.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.seCostInternacion.Size = new System.Drawing.Size(100, 20);
-            this.seCostInternacion.TabIndex = 19;
+            this.seCostInternacion.TabIndex = 12;
             // 
             // labelControl10
             // 
-            this.labelControl10.Location = new System.Drawing.Point(275, 144);
+            this.labelControl10.Location = new System.Drawing.Point(275, 138);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(86, 13);
             this.labelControl10.TabIndex = 18;
@@ -322,12 +333,12 @@ namespace SimuladorCR1
             0,
             0,
             0});
-            this.seParqueo.Location = new System.Drawing.Point(375, 102);
+            this.seParqueo.Location = new System.Drawing.Point(375, 96);
             this.seParqueo.Name = "seParqueo";
             this.seParqueo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.seParqueo.Size = new System.Drawing.Size(100, 20);
-            this.seParqueo.TabIndex = 16;
+            this.seParqueo.TabIndex = 11;
             this.seParqueo.EditValueChanged += new System.EventHandler(this.seParqueo_EditValueChanged);
             // 
             // seFlete
@@ -342,7 +353,7 @@ namespace SimuladorCR1
             this.seFlete.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.seFlete.Size = new System.Drawing.Size(100, 20);
-            this.seFlete.TabIndex = 15;
+            this.seFlete.TabIndex = 10;
             this.seFlete.EditValueChanged += new System.EventHandler(this.seFlete_EditValueChanged);
             // 
             // seSemaforo
@@ -357,7 +368,7 @@ namespace SimuladorCR1
             this.seSemaforo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.seSemaforo.Size = new System.Drawing.Size(100, 20);
-            this.seSemaforo.TabIndex = 14;
+            this.seSemaforo.TabIndex = 9;
             this.seSemaforo.EditValueChanged += new System.EventHandler(this.seSemaforo_EditValueChanged);
             // 
             // seRevisionSAT
@@ -367,17 +378,17 @@ namespace SimuladorCR1
             0,
             0,
             0});
-            this.seRevisionSAT.Location = new System.Drawing.Point(138, 141);
+            this.seRevisionSAT.Location = new System.Drawing.Point(138, 135);
             this.seRevisionSAT.Name = "seRevisionSAT";
             this.seRevisionSAT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.seRevisionSAT.Size = new System.Drawing.Size(100, 20);
-            this.seRevisionSAT.TabIndex = 13;
+            this.seRevisionSAT.TabIndex = 8;
             this.seRevisionSAT.EditValueChanged += new System.EventHandler(this.seRevisionSAT_EditValueChanged);
             // 
             // labelControl15
             // 
-            this.labelControl15.Location = new System.Drawing.Point(275, 105);
+            this.labelControl15.Location = new System.Drawing.Point(275, 99);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(40, 13);
             this.labelControl15.TabIndex = 11;
@@ -401,7 +412,7 @@ namespace SimuladorCR1
             // 
             // labelControl12
             // 
-            this.labelControl12.Location = new System.Drawing.Point(17, 144);
+            this.labelControl12.Location = new System.Drawing.Point(17, 138);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(79, 26);
             this.labelControl12.TabIndex = 8;
@@ -414,7 +425,7 @@ namespace SimuladorCR1
             0,
             0,
             0});
-            this.seManejoDocumento.Location = new System.Drawing.Point(138, 102);
+            this.seManejoDocumento.Location = new System.Drawing.Point(138, 96);
             this.seManejoDocumento.Name = "seManejoDocumento";
             this.seManejoDocumento.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -439,7 +450,7 @@ namespace SimuladorCR1
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(17, 105);
+            this.labelControl5.Location = new System.Drawing.Point(17, 99);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(111, 13);
             this.labelControl5.TabIndex = 5;
@@ -465,7 +476,7 @@ namespace SimuladorCR1
             this.seElaboracionDA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.seElaboracionDA.Size = new System.Drawing.Size(100, 20);
-            this.seElaboracionDA.TabIndex = 3;
+            this.seElaboracionDA.TabIndex = 5;
             this.seElaboracionDA.EditValueChanged += new System.EventHandler(this.seElaboracionDA_EditValueChanged);
             // 
             // labelControl9
@@ -482,7 +493,7 @@ namespace SimuladorCR1
             this.groupBox4.Location = new System.Drawing.Point(12, 210);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(261, 65);
-            this.groupBox4.TabIndex = 5;
+            this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Volumen por Unidad";
             // 
@@ -498,7 +509,7 @@ namespace SimuladorCR1
             this.seVolumenPorUnidad.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.seVolumenPorUnidad.Size = new System.Drawing.Size(100, 20);
-            this.seVolumenPorUnidad.TabIndex = 3;
+            this.seVolumenPorUnidad.TabIndex = 4;
             // 
             // groupBox5
             // 
@@ -506,7 +517,7 @@ namespace SimuladorCR1
             this.groupBox5.Location = new System.Drawing.Point(288, 210);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(234, 65);
-            this.groupBox5.TabIndex = 6;
+            this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Unidades por caja";
             // 
@@ -538,7 +549,7 @@ namespace SimuladorCR1
             this.groupBox6.Location = new System.Drawing.Point(542, 56);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(276, 219);
-            this.groupBox6.TabIndex = 7;
+            this.groupBox6.TabIndex = 8;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Precios Finales";
             // 
@@ -549,14 +560,17 @@ namespace SimuladorCR1
             0,
             0,
             0});
+            this.seFCAUSD.Enabled = false;
             this.seFCAUSD.Location = new System.Drawing.Point(133, 132);
             this.seFCAUSD.Name = "seFCAUSD";
+            this.seFCAUSD.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.seFCAUSD.Properties.Appearance.Options.UseBackColor = true;
             this.seFCAUSD.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.seFCAUSD.Properties.DisplayFormat.FormatString = "C2";
             this.seFCAUSD.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.seFCAUSD.Size = new System.Drawing.Size(100, 20);
-            this.seFCAUSD.TabIndex = 10;
+            this.seFCAUSD.TabIndex = 36;
             // 
             // seFCA
             // 
@@ -565,12 +579,17 @@ namespace SimuladorCR1
             0,
             0,
             0});
+            this.seFCA.Enabled = false;
             this.seFCA.Location = new System.Drawing.Point(133, 102);
             this.seFCA.Name = "seFCA";
+            this.seFCA.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.seFCA.Properties.Appearance.Options.UseBackColor = true;
             this.seFCA.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.seFCA.Properties.DisplayFormat.FormatString = "N4";
+            this.seFCA.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.seFCA.Size = new System.Drawing.Size(100, 20);
-            this.seFCA.TabIndex = 9;
+            this.seFCA.TabIndex = 35;
             // 
             // labelControl20
             // 
@@ -595,12 +614,17 @@ namespace SimuladorCR1
             0,
             0,
             0});
+            this.seSeguroSobrePrecio.Enabled = false;
             this.seSeguroSobrePrecio.Location = new System.Drawing.Point(133, 65);
             this.seSeguroSobrePrecio.Name = "seSeguroSobrePrecio";
+            this.seSeguroSobrePrecio.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.seSeguroSobrePrecio.Properties.Appearance.Options.UseBackColor = true;
             this.seSeguroSobrePrecio.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.seSeguroSobrePrecio.Properties.DisplayFormat.FormatString = "N4";
+            this.seSeguroSobrePrecio.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.seSeguroSobrePrecio.Size = new System.Drawing.Size(100, 20);
-            this.seSeguroSobrePrecio.TabIndex = 6;
+            this.seSeguroSobrePrecio.TabIndex = 34;
             // 
             // labelControl17
             // 
@@ -617,12 +641,17 @@ namespace SimuladorCR1
             0,
             0,
             0});
+            this.sePrecioFactura.Enabled = false;
             this.sePrecioFactura.Location = new System.Drawing.Point(133, 28);
             this.sePrecioFactura.Name = "sePrecioFactura";
+            this.sePrecioFactura.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.sePrecioFactura.Properties.Appearance.Options.UseBackColor = true;
             this.sePrecioFactura.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.sePrecioFactura.Properties.DisplayFormat.FormatString = "N4";
+            this.sePrecioFactura.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.sePrecioFactura.Size = new System.Drawing.Size(100, 20);
-            this.sePrecioFactura.TabIndex = 3;
+            this.sePrecioFactura.TabIndex = 33;
             // 
             // labelControl18
             // 
@@ -638,7 +667,7 @@ namespace SimuladorCR1
             this.btnMostrarResultado.Location = new System.Drawing.Point(561, 312);
             this.btnMostrarResultado.Name = "btnMostrarResultado";
             this.btnMostrarResultado.Size = new System.Drawing.Size(108, 50);
-            this.btnMostrarResultado.TabIndex = 8;
+            this.btnMostrarResultado.TabIndex = 6;
             this.btnMostrarResultado.Text = "Mostrar \r\nResultado";
             this.btnMostrarResultado.Click += new System.EventHandler(this.btnMostrarResultado_Click);
             // 
@@ -648,7 +677,7 @@ namespace SimuladorCR1
             this.btnLimpiar.Location = new System.Drawing.Point(675, 312);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(108, 50);
-            this.btnLimpiar.TabIndex = 9;
+            this.btnLimpiar.TabIndex = 7;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 

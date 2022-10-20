@@ -16,13 +16,7 @@ namespace SimuladorCR1
         public frmCalculation()
         {
             InitializeComponent();
-            defaultSettingsSpinners(seImpuestoConsumo);
-        }
-
-        private void defaultSettingsSpinners(SpinEdit sp)
-        {
-            sp.Properties.EditFormat.FormatString = "n4";
-            sp.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+           
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
